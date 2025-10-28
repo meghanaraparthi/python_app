@@ -8,7 +8,7 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     uname = request.form['uname']
-    return render_template('greeting.html', name=uname)
+    return render_template('greetings.html', name=uname)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
